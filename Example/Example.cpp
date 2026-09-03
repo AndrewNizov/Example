@@ -3,6 +3,10 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    double a, h, s;
+    std::cin >> a >> h;
+    s = 0.5 * a * h;
+
+    std::cout << s;
 }
 
