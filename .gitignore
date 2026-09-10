@@ -2,6 +2,8 @@
 *.d
 x64
 .vs
+packages
+
 # Compiled Object files
 *.slo
 *.lo
