@@ -1,12 +1,24 @@
-﻿
+﻿#include <stdexcept>
 #include <iostream>
-
+#include "h.h"
+using namespace std;
 int main()
 {
-    double a, h, s;
-    std::cin >> a >> h;
-    s = 0.5 * a * h;
+    setlocale(LC_ALL, "Russian");
+    double h, s;
+    std::cout << "введите высоту и сторону треугольника";
+    std::cin >> h >> s;
+    try
+    {
+        Triangle T(s, h);
+        std::cout << "площадь: " << T.area();
+    }
+    catch (const exception& e)
+    {
+        std::cout << "err" << e.what() << endl;
+    }
+   
+    return 0;
 
-    std::cout << s;
 }
 
