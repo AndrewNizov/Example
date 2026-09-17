@@ -11,7 +11,7 @@ TEST(TriangleTest, ValidConstructorAndArea) {
 }
 
 // Тест сеттеров с корректными значениями
-TEST(TriangleTest, ValidSetters) {
+TEST(Trian  gleTest, ValidSetters) {
     Triangle t(1.0, 1.0);
 
     t.setS(10.0);
